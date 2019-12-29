@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  .jumbotron
+    h1 New Employee
+    form
+        .form-group.row
+            label.col-4.col-form-label(for='name') Name
+            .col-8
+            input#name.form-control(name='name' placeholder='Please enter employee name' type='text' required='required')
+        .form-group.row
+            label.col-4.col-form-label(for='mobileNo') Mobile Number
+            .col-8
+            input#mobileNo.form-control(name='mobileNo' placeholder='Please enter employee number' type='text' required='required')
+        .form-group.row
+            label.col-4.col-form-label(for='address') Address
+            .col-8
+            textarea#address.form-control(name='address' cols='40' rows='5' required='required')
+        .form-group.row
+            label.col-4.col-form-label(for='pan') PAN Number
+            .col-8
+            input#pan.form-control(name='pan' placeholder='Enter employee PAN card number' type='text' required='required')
+        .form-group.row
+            .offset-4.col-8
+            button.btn.btn-primary(name='submit' type='submit') Save
